@@ -1,0 +1,39 @@
+.header1s{
+    color: whitesmoke;
+    background-color: red;
+}
+
+#contacts {
+color: #574c4b;
+background-color: #deaeab;
+}
+.header2s{
+    color: #1f1c1c;
+    background-color: #cc827c;
+}
+
+.description{
+    color:#1f1c1c;
+    background-color:#c2c0c0
+}
+
+.header3s{
+    color: #9c0f05;
+    background-color: beige;
+}
+
+.spanstyle{
+    color: #9c0f05;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color:yellow
+}
