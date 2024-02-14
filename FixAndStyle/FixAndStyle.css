@@ -1,0 +1,49 @@
+h1{
+    color: white;
+}
+.purpdiv{
+    background-color: #818be3;
+}
+h2{
+    color: blue;
+}
+#yellowtext{
+    color: #e0a91d;
+    font-weight: bold;
+}
+h3{
+    background-color: yellow;
+}
+#redp{
+    color: red;
+}
+h4{
+    color: yellow;
+    background-color: green;
+}
+#lightgreenp{
+    background-color: #7be374;
+}
+h5{
+    color: red;
+}
+#yellowparagraph{
+    background-color: yellow;
+}
+#bluespan{
+    color: blue;
+    font-weight: bold;
+}
+a:link{
+    color: green;
+    text-decoration: none;
+}
+
+a:visited{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
