@@ -1,0 +1,200 @@
+#wrapper{
+    margin: 1em auto;
+    width:960px;
+    border: 3px solid blue;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+header{
+    grid-column: span 12;
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+}
+.floatimg{
+    float:left;
+    padding: 0px;
+    margin-right: 20px;
+    border: 3px solid blue;
+}
+nav{
+    grid-column: span 960px;
+    margin:0px;
+}
+h2{
+    border-bottom: 3px solid blue;
+    color:blue;
+    font-weight:normal;
+    font-family: Helvetica, sans-serif;
+    
+}
+.welcome p{
+    text-align: justify;
+}
+.welcome{
+    grid-column: span 3;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+}
+.aboutside{
+    grid-column: span 3;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.floatimg2{
+    float:right;
+    padding: 0px;
+    margin-left: 20px;
+    border: 3px solid blue;
+    width: 350px;
+    height: 200px;
+}
+.barbie{
+    grid-column: span 4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+    .barbie a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    .barbie a:hover{
+        color: #1335ae;
+    }
+.ken{
+    grid-column: span 4;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     padding: 20px;
+}
+    .ken a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    .ken a:hover{
+        color:#1335ae;
+    }
+.allan{
+    grid-column: span 4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+    .allan a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    .allan a:hover{
+        color:#1335ae;
+    }
+#barbie{
+    float: inline;
+    width: 280px;
+    height: 300px;
+}
+#ken{
+    float: inline;
+    width: 280px;
+    height: 300px;
+}
+#allan{
+    float: inline;
+    width: 280px;
+    height: 300px;
+}
+main{
+    grid-column: span 9;
+    font-family:Helvetica, sans-serif;
+    margin-bottom:20px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+.barbiemov{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    grid-column: span 12;
+    border-top: solid 3px blue;
+    padding:10px;
+    background-color: red;
+}
+h1{
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    color: lightblue;
+    padding: 24px;
+    margin: 0px;
+    font-style:italic;
+}
+h1 a {
+    text-decoration: none;
+}
+h1 a:visited{
+    color:lightblue;
+}
+h1 a:hover{
+    color:red;
+}
+#stoopid{
+    background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+    display: inline-block;
+    width:237px;
+    height:49.5px;
+    margin-bottom:1px;
+    vertical-align: middle;
+    }
+nav ul{
+    padding: 0px;
+    margin:0px;
+}
+nav li {
+    width: 235px;
+    background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+    margin-right: 1px;
+    display: inline-block;
+    color: lightblue;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+    }
+
+    nav li a{
+        color: lightblue;
+        text-decoration: none;
+        display: block;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav li a:hover{
+        background-image: linear-gradient(to top, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+        color:white;
+    }
+
+
+
+main a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+main a:hover{
+    color:#1335ae;
+}
