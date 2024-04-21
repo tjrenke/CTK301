@@ -1,0 +1,79 @@
+body{
+  display:grid;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.wrapper {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+    font-family: "Kalam";
+  }
+
+header{
+   display: flex;
+   align-items: baseline;
+   grid-column: span 12;
+   
+}
+header h1{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-right:20px ;
+}
+header nav{
+  display: flex;
+}
+nav ul li{
+    text-decoration:none;
+    font-weight: bold;
+    display: inline-grid;
+    margin-right:10px;
+    margin-top: 0px;
+}
+nav ul li a{
+  color: black;
+}
+main{
+  grid-column: span 12;
+  background-image:url(back.jpg) ;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 1300px;
+  text-align: center;
+}
+main img{
+  width: 795px;
+  height: 594px;
+  border-radius: 15px;
+}
+
+footer{
+  grid-column: span 12;
+  display: flex;
+  align-items: center;
+}
+
+footer a{
+  display:block;
+}
+
+
+#myCarousel {
+  margin: 80px;
+  display:flex;
+  overflow-x:auto;
+  gap: 5px;
+  list-style:none;
+  scroll-snap-type: x mandatory;
+  vertical-align: middle;
+}
+
+#myCarousel .f-carousel__slide {
+  text-align: center;
+}
+.f-carousel__dots{
+  display:none;
+}
