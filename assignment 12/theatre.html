@@ -2,13 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Tessa Renken</title>
-    <link href="assignment12.css" rel="stylesheet" type="text/css" />
+    <title>Theatre</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/f4cd40ed60.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" /> 
+    <link href="assignment12.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="wrapper">
@@ -21,17 +23,41 @@
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="filmmaking.html">Filmmaking</a></li>
             <li><a href="photo.html">Photography</a></li>
-            <li><a href="writing.html">Writings</a></li>
+            <li><a href="writing.html">Film Analysis</a></li>
             <li><a href="theatre.html">Theatre</a></li>
+            <li><a href="other.html">Other</a></li>
         </ul>
     </nav>
 </header>
     <main>
+        <div id="thetbox">
+            <div id="secondCarousel" class="f-carousel">
+                <div class="f-carousel__slide"><img src="lightbord.jpg"></div>
+                <div class="f-carousel__slide"><img src="focus.jpg"></div>
+                <div class="f-carousel__slide"><img src="ledfocus.jpg"></div>
+            </div>
+            <div id="bot">
+                <h2>Lighting</h2>
+                 <p>I am currently employed in ISU's Light Shop for the School of Theater and Dance. My work consists of hanging lights,focusing lights, being able to call focus by reading a plot, learning to run the light board,and troubleshooting and repairing damaged lights.</p>
+            </div>
+        </div>
+        <div id="costbox">
+            <div id="thirdCarousel" class="f-carousel">
+                <div class="f-carousel__slide"><img src="rend.jpg"></div>
+                <div class="f-carousel__slide"><img src="rend2.jpg"></div>
+                <div class="f-carousel__slide"><img src="blos.jpg"></div>
+                <div class="f-carousel__slide"><img src="quilt.jpg"></div>
+            </div>
+            <div id="cbot">
+                <h2>Costuming</h2>
+                 <p>I worked in my high school's costume department and gained experience sewing, reading patterns, pulling costumes, performing quick changes,making alterations, and doing fittings. </p>
+            </div>
+        </div>
         
     </main>
     <footer>
         <h2 id="con">Connect with me -</h2>
-        <h2>tjrenken3@gmail.com</h2>
+        <h2><a href="mailto:tjrenken3@gmail.com">tjrenken3@gmail.com</a></h2>
         <a href="https://www.instagram.com/tj_kleine/" target="_blank" class="bi bi-instagram"></a>
         <a href="https://www.linkedin.com/in/tessa-renken-535739224/" target="_blank" class="bi bi-linkedin"></a>
         <a href="https://www.youtube.com/channel/UCeLg_O14H72EUFKhnKoj-AQ" target="_blank" class="bi bi-youtube"></a>
@@ -39,5 +65,16 @@
 
     </footer>
 </div>
+<script>   
+    Fancybox.bind("[data-fancybox]", {});
+
+    const container = document.getElementById("myCarousel");
+    const options = { infinite: false };
+    new Carousel(container, options);
+    
+    const container2 = document.getElementById("secondCarousel");
+    const options2 = { infinite: false };
+    new Carousel(container2, options2);
+</script>
 </body>
 </html>

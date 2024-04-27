@@ -1,19 +1,24 @@
 body{
   display:grid;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
 }
 .wrapper {
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 24px;
     font-family: "Kalam";
+    padding-bottom: 15px;
   }
 
 header{
    display: flex;
    align-items: baseline;
    grid-column: span 12;
+   background-color: white;
+   padding: 5px;
+   position: fixed;
+   width: 100%;
+   z-index: 1000000;
    
 }
 header h1{
@@ -37,30 +42,91 @@ nav ul li a{
   color: black;
 }
 main{
+  display:grid;
   grid-column: span 12;
   background-image:url(back.jpg) ;
+  background-attachment: fixed;
   margin-left: 0px;
   margin-right: 0px;
-  height: 1300px;
-  text-align: center;
+  min-height: 800px;
+  padding-top:100px;
 }
-main img{
-  width: 795px;
-  height: 594px;
+main a img{
+
+  grid-column-start:2 ;
+  grid-column-end: 10;
+  width: 530px;
+  height: 396px;
   border-radius: 15px;
-}
+  
+ } 
 
-footer{
-  grid-column: span 12;
-  display: flex;
+#box {
+  position: relative;
+  grid-column:span 12;
   align-items: center;
+  vertical-align: middle;
 }
 
-footer a{
-  display:block;
+#box img {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  width: 25%;
+  z-index: 10000;
+}
+#box #about {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  background-color: #f5c8ae;
+  padding: 5em;
+  height: 520px;
+  width:15%;
+  padding-left: 120px;
+  padding-bottom: 120px;
+}
+#box h2{
+  margin-block: 0px;
+}
+.vidbox {
+  position: relative;
+  grid-column:span 12;
+  align-items: center;
+  vertical-align: middle;
+  margin: 10px;
 }
 
+.vidbox img {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  width: 25%;
+  z-index: 10000;
+}
+.vidbox iframe {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  width: 25%;
+  z-index: 10000;
+}
 
+.vidbox p {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  background-color: #f5c8ae;
+  padding: 5em;
+  height: 250px;
+  width:15%;
+  padding-left: 120px;
+}
+
+main #myCarousel img{
+  max-height: 60%;
+  max-width: 60%;
+}
 #myCarousel {
   margin: 80px;
   display:flex;
@@ -69,11 +135,137 @@ footer a{
   list-style:none;
   scroll-snap-type: x mandatory;
   vertical-align: middle;
+ }
+ 
+ 
+ #myCarousel .f-carousel__slide {
+  text-align: center;
+  
+ }
+ main #secondCarousel img{
+  max-height: 80%;
+  max-width: 80%;
+}
+#secondCarousel {
+  margin: 80px;
+  display:flex;
+  overflow-x:auto;
+  gap: 5px;
+  list-style:none;
+  scroll-snap-type: x mandatory;
+  vertical-align: middle;
+ }
+ 
+ 
+ #secondCarousel .f-carousel__slide {
+  text-align: center;
+  
+ }
+ main #thirdCarousel img{
+  max-height: 80%;
+  max-width: 80%;
+}
+#thirdCarousel {
+  margin: 80px;
+  display:flex;
+  overflow-x:auto;
+  gap: 5px;
+  list-style:none;
+  scroll-snap-type: x mandatory;
+  vertical-align: middle;
+ }
+ 
+ 
+ #thirdCarousel .f-carousel__slide {
+  text-align: center;
+  
+ }
+ .f-carousel__dots{
+  display:none;
+ }
+ #thetbox {
+  position: relative;
+  grid-column:span 12;
+  align-items: center;
+  vertical-align: middle;
 }
 
-#myCarousel .f-carousel__slide {
+#thetbox #secondCarousel {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  width: 25%;
+  z-index: 10000;
+}
+#thetbox #bot {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  background-color: #f5c8ae;
+  padding: 5em;
+  height: 520px;
+  width:15%;
+  padding-left: 120px;
+  padding-bottom: 120px;}
+
+  #costbox {
+    position: relative;
+    grid-column:span 12;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 800px;
+  }
+  
+  #costbox #thirdCarousel {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 25%;
+    z-index: 10000;
+  }
+  #costbox #cbot {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    background-color: #f5c8ae;
+    padding: 5em;
+    height: 520px;
+    width:15%;
+    padding-left: 120px;
+    padding-bottom: 120px;}
+
+#other{
+  background-color: #f5c8ae;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  align-items: center;
+  grid-column-start: 2;
+  vertical-align: middle;
+  margin-top: 200px;
+}
+
+ footer{
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width:100%;
+  z-index: 200000;
+}
+footer a{
+  display:block;
+  font-size: 25px;
+  color: #6925e8;
+  text-decoration: none;
+}
+footer h2{
+  grid-column: span 4;
   text-align: center;
 }
-.f-carousel__dots{
-  display:none;
-}
+
+
+ 
