@@ -42,7 +42,6 @@ nav ul li a{
   color: black;
 }
 main{
-  display:grid;
   grid-column: span 12;
   background-image:url(back.jpg) ;
   background-attachment: fixed;
@@ -51,6 +50,39 @@ main{
   min-height: 800px;
   padding-top:100px;
 }
+main #main{
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+figure {
+  display:inline-block;
+  position: relative; /* this allows elements inside to be absolutely positioned */
+  width: 530px; /* match the image width */
+}
+figure img{
+  background-color: black;
+}
+figcaption {
+  width: 100%;
+  position: absolute; /* this places the caption on top of the image */
+  top: 0; /* places the caption in the top left corner */
+  left: 0;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0; /* this hides the caption */
+  transition: .5s opacity; /* this fades in the hover */
+}
+
+figure:hover img{
+filter:brightness(50%)
+}
+
+figure:hover figcaption{
+  opacity: 1; /* show the caption on hover */
+}
 main a img{
 
   grid-column-start:2 ;
@@ -58,6 +90,9 @@ main a img{
   width: 530px;
   height: 396px;
   border-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
   
  } 
 
@@ -90,7 +125,7 @@ main a img{
   margin-block: 0px;
 }
 .vidbox {
-  position: relative;
+  display: relative;
   grid-column:span 12;
   align-items: center;
   vertical-align: middle;
@@ -200,7 +235,7 @@ main #myCarousel img{
 #thetbox #bot {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 50%;
   background-color: #f5c8ae;
   padding: 5em;
   height: 520px;
@@ -226,7 +261,7 @@ main #myCarousel img{
   #costbox #cbot {
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 50%;
     background-color: #f5c8ae;
     padding: 5em;
     height: 520px;
@@ -244,13 +279,16 @@ main #myCarousel img{
   vertical-align: middle;
   margin-top: 200px;
 }
+#film{
+  display: inline-block;
+}
 
  footer{
   grid-column: span 12;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: white;
   width:100%;
@@ -266,6 +304,25 @@ footer h2{
   grid-column: span 4;
   text-align: center;
 }
-
-
- 
+#analysis{
+  display: block;
+  border-radius: 10px;
+}
+main #papers a{
+  display: inline-block;
+  padding: 10px;
+  width: 420px;
+  height:80px;
+  background-color: #d0b7a6;
+  margin: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+main #papers a:hover{
+  background-color: #bf9c86;
+}
+main #film{
+  display: flex;
+}
