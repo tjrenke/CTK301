@@ -125,11 +125,14 @@ main a img{
   margin-block: 0px;
 }
 .vidbox {
-  display: relative;
+  position: relative;
   grid-column:span 12;
   align-items: center;
   vertical-align: middle;
   margin: 10px;
+  display: inline-block;
+  width: 780px;
+  height: 502px;
 }
 
 .vidbox img {
@@ -142,28 +145,29 @@ main a img{
 .vidbox iframe {
   position: absolute;
   top: 50px;
-  left: 25%;
-  width: 25%;
+  left: 15%;
+  width: 50%;
   z-index: 10000;
 }
 
 .vidbox p {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 50%;
   background-color: #f5c8ae;
   padding: 5em;
   height: 250px;
-  width:15%;
-  padding-left: 120px;
+  width: 30%;
+  padding-left: 180px;
 }
 
 main #myCarousel img{
-  max-height: 60%;
-  max-width: 60%;
+  max-height: 50%;
+  max-width: 50%;
 }
 #myCarousel {
-  margin: 80px;
+  margin:80px;
+  padding-bottom: 0;
   display:flex;
   overflow-x:auto;
   gap: 5px;
@@ -221,7 +225,6 @@ main #myCarousel img{
  #thetbox {
   position: relative;
   grid-column:span 12;
-  align-items: center;
   vertical-align: middle;
 }
 
@@ -246,7 +249,6 @@ main #myCarousel img{
   #costbox {
     position: relative;
     grid-column:span 12;
-    align-items: center;
     vertical-align: middle;
     margin-top: 800px;
   }
@@ -279,9 +281,6 @@ main #myCarousel img{
   vertical-align: middle;
   margin-top: 200px;
 }
-#film{
-  display: inline-block;
-}
 
  footer{
   grid-column: span 12;
@@ -305,24 +304,35 @@ footer h2{
   text-align: center;
 }
 #analysis{
-  display: block;
   border-radius: 10px;
 }
 main #papers a{
   display: inline-block;
-  padding: 10px;
-  width: 420px;
-  height:80px;
+  text-align: center;
+  padding: 30px;
+  width: 490px;
+  height:30px;
   background-color: #d0b7a6;
-  margin: 10px;
+  margin: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
   color: black;
   border-radius: 10px;
+ 
 }
 main #papers a:hover{
   background-color: #bf9c86;
 }
+#analysis iframe{
+  margin: 40px;
+  margin-bottom: 80px;
+  align-items: center;
+
+}
 main #film{
   display: flex;
+}
+#other{
+ margin-left: 675px;
+ margin-right: 700px;
 }
