@@ -160,13 +160,18 @@ main a img{
   width: 30%;
   padding-left: 180px;
 }
-
+#theater {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 main #myCarousel img{
   max-height: 50%;
   max-width: 50%;
 }
 #myCarousel {
-  margin:80px;
+  position: fixed;
+  margin-top:40px;
+  margin-bottom: 0px;
   padding-bottom: 0;
   display:flex;
   overflow-x:auto;
@@ -186,7 +191,6 @@ main #myCarousel img{
   max-width: 80%;
 }
 #secondCarousel {
-  margin: 80px;
   display:flex;
   overflow-x:auto;
   gap: 5px;
@@ -205,7 +209,6 @@ main #myCarousel img{
   max-width: 80%;
 }
 #thirdCarousel {
-  margin: 80px;
   display:flex;
   overflow-x:auto;
   gap: 5px;
@@ -223,16 +226,16 @@ main #myCarousel img{
   display:none;
  }
  #thetbox {
+  margin: 80px;
   position: relative;
-  grid-column:span 12;
   vertical-align: middle;
 }
 
 #thetbox #secondCarousel {
   position: absolute;
   top: 50px;
-  left: 25%;
-  width: 25%;
+  left: 10%;
+  width: 55%;
   z-index: 10000;
 }
 #thetbox #bot {
@@ -241,23 +244,23 @@ main #myCarousel img{
   left: 50%;
   background-color: #f5c8ae;
   padding: 5em;
-  height: 520px;
-  width:15%;
+  height: 400px;
+  width:30%;
   padding-left: 120px;
   padding-bottom: 120px;}
 
   #costbox {
+    margin-top: 80px;
+    margin-right: 80px;
     position: relative;
-    grid-column:span 12;
     vertical-align: middle;
-    margin-top: 800px;
   }
   
   #costbox #thirdCarousel {
     position: absolute;
     top: 50px;
-    left: 25%;
-    width: 25%;
+    left: 10%;
+    width: 55%;
     z-index: 10000;
   }
   #costbox #cbot {
@@ -266,8 +269,8 @@ main #myCarousel img{
     left: 50%;
     background-color: #f5c8ae;
     padding: 5em;
-    height: 520px;
-    width:15%;
+    height: 400px;
+    width:30%;
     padding-left: 120px;
     padding-bottom: 120px;}
 
@@ -306,11 +309,15 @@ footer h2{
 #analysis{
   border-radius: 10px;
 }
+#papers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
 main #papers a{
   display: inline-block;
   text-align: center;
   padding: 30px;
-  width: 490px;
   height:30px;
   background-color: #d0b7a6;
   margin: 20px;
